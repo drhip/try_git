@@ -13,15 +13,15 @@ jobs:
       )
     runs-on: ubuntu-latest
     steps:
-      - run: |
-          ls ${{ github.workspace }}
-      - name: work around permission issue
-        run: git config --global --add safe.directory ${{ github.workspace }}
       - name: Checkout the latest code
         uses: actions/checkout@v2
         with:
           token: ${{ secrets.REBASE_TOKEN }}
           fetch-depth: 0 # otherwise, you will fail to push refs to dest repo
+      - run: |
+          ls ${{ github.workspace }}
+      - name: work around permission issue
+        run: git config --global --add safe.directory ${{ github.workspace }}
       - name: Automatic Rebase
         uses: cirrus-actions/rebase@1.5
         with:
