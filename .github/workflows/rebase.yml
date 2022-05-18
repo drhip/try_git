@@ -13,9 +13,9 @@ jobs:
       )
     runs-on: ubuntu-latest
     steps:
-      - run: ls "/github/workspace"
+      - run: ls "$PWD"
       - name: work around permission issue
-        run: git config --global --add safe.directory /github/workspace
+        run: git config --global --add safe.directory $PWD
       - name: Checkout the latest code
         uses: actions/checkout@v2
         with:
