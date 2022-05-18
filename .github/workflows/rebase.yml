@@ -21,7 +21,7 @@ jobs:
       - run: |
           ls ${{ github.workspace }}
       - name: work around permission issue
-        run: git config --global --add safe.directory ${{ github.workspace }} && git config --global --add safe.directory /github/workspace
+        run: git config --global --add safe.directory ${{ github.workspace }}
       - run: |
           git config --global --get safe.directory
       - name: Automatic Rebase
