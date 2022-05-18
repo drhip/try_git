@@ -13,9 +13,9 @@ jobs:
       )
     runs-on: ubuntu-latest
     steps:
-      - run: echo "GITHUB_WORKSPACE=$GITHUB_WORKSPACE"
+      - run: ls "/github/workspace"
       - name: work around permission issue
-        run: git config --global --add safe.directory /__w/try_git/try_git
+        run: git config --global --add safe.directory /github/workspace
       - name: Checkout the latest code
         uses: actions/checkout@v2
         with:
