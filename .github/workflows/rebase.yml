@@ -24,7 +24,7 @@ jobs:
         run: git config --global --add safe.directory ${{ github.workspace }}
       - run: git config --global --add safe.directory /github/workspace
       - run: |
-          git config --global --get safe.directory
+          git config --global --get-all
       - name: Automatic Rebase
         uses: cirrus-actions/rebase@1.5
         with:
