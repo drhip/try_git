@@ -34,4 +34,4 @@ jobs:
             $URL \
             -H "Content-Type: application/json" \
             -H "Authorization: token $GITHUB_TOKEN" \
-            --data '{ "body": "Rebase is comleted" }'
+            --data '{ "body": "Rebase is completed" }'
