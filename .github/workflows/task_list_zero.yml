@@ -1,4 +1,0 @@
-name: Task List Zero
-uses: WeeverApps/gha-task-list-zero@v1.0
-env:
-    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
