@@ -1,0 +1,13 @@
+### Your checklist for this pull request
+🚨Please review the [guidelines for contributing](../CONTRIBUTING.md) to this repository.
+
+- [ ] Tests for the changes have been added (for bug fixes / features)
+- [ ] I have added tests to cover my changes.
+- [ ] All new and existing tests passed.
+- [ ] Make sure you are making a pull request against ...
+- [ ] Check the ...
+- [ ] Have you written new tests for your core changes, as applicable?
+- [ ] Have you successfully ran tests with your changes locally?
+
+
+Remember to use helpful labels and milestones.
